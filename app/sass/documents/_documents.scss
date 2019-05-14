@@ -1,0 +1,74 @@
+section.documents {
+    padding-top: 94px;
+    padding-bottom: 150px;
+    width: 100%;
+    min-height: calc(100vh - 500px);
+    display: flex;
+    align-items: center;
+}
+.documents-wrp {
+    padding-top: 34px;
+    font-size: 0;
+    display: flex;
+}
+.document {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    height: 66px;
+    border-top: 1px solid $blue;
+    border-bottom: 1px solid $blue;
+    span {
+        font-family: 'proxima_novabold';
+        font-size: 18px;
+        color: $blue;
+        position: relative;
+        text-align: center;
+    }
+    &.link-to-go {
+        span {
+            padding-right: 28px;
+            &::after {
+                position: absolute;
+                content: '';
+                font-family: 'line-awesome';
+                right: 0;
+                top: calc(50% - 8px);
+                font-size: 16px;
+                font-weight: 900;
+                transition: right .3s ease;
+            }
+        }
+    }
+    &.download {
+        span {
+            padding-right: 33px;
+            &::after {
+                position: absolute;
+                display: block;
+                width: 18px;
+                height: 23px;
+                content: '';
+                right: 0;
+                top: calc(50% - 12px);
+                background: url('../img/download.png') center no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+    &:first-child {
+        border-left: 1px solid $blue;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+    &:nth-child(2) {
+        border-left: 1px solid $blue;
+        border-right: 1px solid $blue;
+    }
+    &:last-child {
+        border-right: 1px solid $blue;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}

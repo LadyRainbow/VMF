@@ -1,0 +1,239 @@
+footer {
+    .top-wrp {
+        display: none;
+    }
+    .footer-logo-wrp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    padding-top: 55px;
+    border-top: 1px solid #dee1e6;
+    background-color: $gray;
+    .content {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 72px;
+        width: 100%;
+        @include calc-width(padding-left, 130);
+        @include calc-width(padding-right, 130);
+    }
+    .footer-logo-wrp {
+        .footer-logo-block {
+            display: flex;
+            align-items: center;
+            margin-bottom: 34px;
+            a {
+                display: none;
+            }
+            p {
+                padding-top: 5px;
+                font-family: 'proxima_novabold';
+                font-size: 20px;
+                color: $blue;
+            }
+        }
+        .contract {
+            display: inline-block;
+            color: $dove;
+            position: relative;
+            margin-bottom: 6px;
+            transition: all .3s ease;
+            span {
+                display: inline-block;
+                position: relative;
+                padding-bottom: 3px;
+                &::after {
+                    background-color: #8f949c;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    left: 0;
+                    bottom: 0;
+                    opacity: .3;
+                    transition: all .3s ease;
+                }
+            }
+            &:hover {
+                span {
+                    color: darken($dove, 5%);
+                    &::after {
+                        width: 0;
+                    }
+                }
+
+            }
+        }
+    }
+    .footer-contacts-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+    }
+    .footer-phone {
+        padding-top: 18px;
+        font-family: 'proxima_novabold';
+        font-size: 20px;
+        color: $blue;
+    }
+    a.footer-phone {
+        display: none;
+    }
+    .footer-mail, .order-call-btn {
+        display: inline-block;
+        color: $red;
+        line-height: 26px;
+        position: relative;
+        transition: all .3s ease;
+        cursor: pointer;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            left: 0;
+            bottom: 0;
+            background-color: #e41e25;
+            opacity: .3;
+            transition: all .3s ease;
+        }
+        &:hover {
+            color: $redhover;
+            &::after {
+                width: 0;
+            }
+        }
+    }
+    .footer-nav-list {
+        padding-top: 22px;
+        li {
+            a {
+                font-size: 16px;
+                color: $blue;
+                &:hover {
+                    color: $red;
+                }
+            }
+            & + li {
+                margin-top: 21px;
+            }
+        }
+    }
+    .soc-accs-wrp {
+        li {
+            display: inline-block;
+            width: 65px;
+            height: 53px;
+            border-radius: 6px;
+            transform: skewX(-15deg);
+            transition: background-color .2s ease-out;
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                transform: skewX(15deg);
+                &:hover {
+                    &::before {
+                        animation: toTopFromBottom 0.3s forwards;
+                    }
+                }
+                &::before {
+                    font-family: 'Font Awesome\ 5 Brands';
+                }
+            }
+            &.insta {
+                background-color: #962fbf;
+                a {
+                    &::before {
+                        content: '\f16d';
+                        font-size: 20px;
+                    }
+                }
+                &:hover {
+                    background-color: darken(#962fbf, 10%);
+                }
+            }
+            &.fb {
+                background-color: #3b5998;
+                a {
+                    &::before {
+                        content: '\f39e';
+                        font-size: 20px;
+                    }
+                }
+                &:hover {
+                    background-color: darken(#3b5998, 10%);
+                }
+            }
+            &.youtube {
+                background-color: #ee0f0f;
+                a {
+                    &::before {
+                        content: '\f167';
+                        font-size: 20px;
+                    }
+                }
+                &:hover {
+                    background-color: darken(#ee0f0f, 10%);
+                }
+            }
+            &.vk {
+                background-color: #4a76a8;
+                a {
+                    &::before {
+                        content: '\f189';
+                        font-size: 20px;
+                    }
+                }
+                &:hover {
+                    background-color: darken(#4a76a8, 10%);
+                }
+            }
+            & + li {
+                margin-left: 4px;
+            }
+        }
+    }
+    .footer-bottom {
+        width: 100%;
+        height: 50px;
+        background-color: $blue;
+        color: white;
+        .content {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+            width: 100%;
+            @include calc-width(padding-left, 130);
+            @include calc-width(padding-right, 130);
+        }
+        p {
+            font-family: 'proxima_regular';
+            font-size: 13px;
+            span {
+                opacity: .8;
+            }
+            a {
+                font-family: 'proxima_novasemibold';
+            }
+        }
+    }
+}
+@keyframes toTopFromBottom {
+    49% {
+		transform: translateY(100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}

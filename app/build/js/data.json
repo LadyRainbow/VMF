@@ -1,0 +1,125 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.2520,
+          59.9367
+        ]
+      },
+      "properties": {
+        "balloonContent": "Басейн «СКА» Средний проспект, д. 87",
+        "hintContent": "Басейн «СКА» Средний проспект, д. 87"
+      },
+      "options": {
+        "preset": "islands#violetDotIcon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.3958,
+          50.4571
+        ]
+      },
+      "properties": {
+        "balloonContent": "Бассейн «К-Визит» ул. Чистяковская д. 2 корп. 4",
+        "hintContent": "Бассейн «К-Визит» ул. Чистяковская д. 2 корп. 4"
+      },
+      "options": {
+        "preset": "islands#violetDotIcon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.3080,
+          59.8687
+        ]
+      },
+      "properties": {
+        "balloonContent": "Бассейн МСГ Новоизмайловский проспект, д. 16, к. 6",
+        "hintContent": "Бассейн МСГ Новоизмайловский проспект, д. 16, к. 6"
+      },
+      "options": {
+        "preset": "islands#violetDotIcon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.3691,
+          60.0027
+        ]
+      },
+      "properties": {
+        "balloonContent": "Бассейн «Политех» ул. Политехническая, д. 27",
+        "hintContent": "Бассейн «Политех» ул. Политехническая, д. 27"
+      },
+      "options": {
+        "preset": "islands#violetDotIcon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.3626,
+          60.0041
+        ]
+      },
+      "properties": {
+        "balloonContent": "Бассейн «Экран» ул. Шателена, д. 3",
+        "hintContent": "Бассейн «Экран» ул. Шателена, д. 3"
+      },
+      "options": {
+        "preset": "islands#violetDotIcon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.3719,
+          59.8736
+        ]
+      },
+      "properties": {
+        "balloonContent": "Бассейн школы № 305 ул. Будапештская, д. 8, корп. 3, лит. А",
+        "hintContent": "Бассейн школы № 305 ул. Будапештская, д. 8, корп. 3, лит. А"
+      },
+      "options": {
+        "preset": "islands#violetDotIcon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0812,
+          59.7453
+        ]
+      },
+      "properties": {
+        "balloonContent": "Бассейн школы № 270 ул. Освобождения, д. 29, корп. 3",
+        "hintContent": "Бассейн школы № 270 ул. Освобождения, д. 29, корп. 3",
+        "iconContent": "1"
+      },
+      "options": {
+        "preset": "islands#violetIcon"
+      }
+    }
+  ]
+}

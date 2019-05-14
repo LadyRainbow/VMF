@@ -1,0 +1,131 @@
+<section class="booking">
+    <div class="background"></div>
+    <p class="h3">Бронирование мест в летний лагерь</p>
+    <div class="form-holder">
+        <form id="booking-form">
+            <fieldset>
+                <legend>На какие смены вы планируете поехать в летний лагерь?</legend>
+                <input type="radio" name="camp-variant" id="variant-1"
+                       value="1-я смена летнего лагеря: с 14.06.19 по 05.07.19 (Болгария, г. Росица-Обзор) Стоимость: €1150"
+                       checked/>
+                <label for="variant-1">1-я смена летнего лагеря: с 14.06.19 по 05.07.19 (Болгария, г. Росица-Обзор)
+                    Стоимость: <span>€1150</span></label>
+                <input type="radio"
+                       name="camp-variant"
+                       id="variant-2"
+                       value="2-я смена летнего лагеря: с 05.07.19 по 26.07.19 (Болгария, г. Росица - Обзор) Стоимость: €1150"/>
+                <label for="variant-2">2-я смена летнего лагеря: с 05.07.19 по 26.07.19 (Болгария, г. Росица -
+                    Обзор)
+                    Стоимость: <span>€1150</span></label>
+                <input type="radio"
+                       name="camp-variant"
+                       id="variant-3"
+                       value="3-я смена летнего лагеря: с 26.07.19 по 16.08.19 (Болгария, г. Росица - Обзор) Стоимость: €1150"/>
+                <label for="variant-3">3-я смена летнего лагеря: с 26.07.19 по 16.08.19 (Болгария, г. Росица -
+                    Обзор)
+                    Стоимость: <span>€1150</span></label>
+                <input type="radio"
+                       name="camp-variant"
+                       id="variant-4"
+                       value="Летний лагерь: с 02.08.19 по 23.08.19 августа (Турция, о. Кипр) Стоимость: $1125 + 30000 руб. за авиаперелет"/>
+                <label for="variant-4">Летний лагерь: с 02.08.19 по 23.08.19 августа (Турция, о. Кипр)
+                    <br>Стоимость: <span>$1125 + 30000 руб. за авиаперелет</span></label>
+            </fieldset>
+            <fieldset class="member">
+                <legend>Занимаетесь ли вы в спортивном клубе «ВМФ»?</legend>
+                <input type="radio"
+                       name="member"
+                       id="yes"
+                       value="yes"
+                       checked/>
+                <label for="yes">Да</label>
+                <input type="radio" name="member" id="no"
+                       value="no"/>
+                <label for="no">Нет</label>
+            </fieldset>
+            <fieldset class="pool">
+                <legend>Если вы занимаетесь в CК «ВМФ», укажите в каком бассейне</legend>
+                <label for="pool"></label>
+                <select id="pool" name="pool">
+                    <option value="Бассейн «К-Визит», ул. Чистяковская д. 2 корп. 4" selected>Бассейн «К-Визит», ул.
+                        Чистяковская д. 2 корп. 4
+                    </option>
+                    <option value="Бассейн 2">Бассейн 2</option>
+                    <option value="Бассейн 3">Бассейн 3</option>
+                    <option value="Бассейн 4">Бассейн 4</option>
+                </select>
+                <div class="select-overlay"></div>
+            </fieldset>
+            <fieldset class="parents">
+                <legend>Поедут ли родители с ребенком?</legend>
+                <input type="radio"
+                       name="parents"
+                       id="they-will"
+                       value="they-will"
+                       checked/>
+                <label for="they-will">Да</label>
+                <input type="radio"
+                       name="parents"
+                       id="they-wont"
+                       value="they-wont"/>
+                <label for="they-wont">Нет</label>
+            </fieldset>
+            <fieldset class="req">
+                <legend>ФИО заявителя (родитель или законный представитель)*</legend>
+                <input type="text"
+                       name="parents-name"
+                       id="parents-name"
+                       data-input="text"
+                       class="error required"/>
+
+                <label for="parents-name"></label>
+            </fieldset>
+            <fieldset class="req">
+                <legend>ФИО ребенка*</legend>
+                <input type="text"
+                       name="child-name"
+                       id="child-name"
+                       data-input="text"
+                       class="error required"/>
+
+                <label for="child-name"></label>
+            </fieldset>
+            <fieldset class="req">
+                <legend>Возраст ребенка*</legend>
+                <input type="number"
+                       min="0"
+                       max="21"
+                       step="1"
+                       name="how-old"
+                       id="how-old"
+                       data-input="number"
+                       class="error required"/>
+
+                <label for="how-old"></label>
+            </fieldset>
+            <fieldset class="req">
+                <legend>Контактный номер*</legend>
+                <input type="text"
+                       name="phone"
+                       id="phone"
+                       data-input="phone"
+                       class="error required"/>
+
+                <label for="phone"></label>
+            </fieldset>
+            <fieldset class="check">
+                <input type="checkbox"
+                       name="agree"
+                       id="agree"
+                       data-input="checkbox"
+                       value="agree"
+                       class="error required"/>
+                <label for="agree">Даю согласие на обработку <a href="#">персональных данных</a></label>
+            </fieldset>
+            <fieldset>
+                <input type="submit">
+            </fieldset>
+        </form>
+    </div>
+
+</section>

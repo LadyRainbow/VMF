@@ -1,0 +1,111 @@
+<section class="checkout">
+    <div class="content">
+        <h3 class="checkout-title">Оформление заказа</h3>
+        <form action="">
+            <div class="checkout-blocks-wrp">
+                <div class="checkout-block-info">
+                        <div class="flex-alignment">
+                            <div class="field checkout-field checkout-field-name">
+                                <p>Имя <span>*</span></p>
+                                <input class="input-checkout" type="text" name="name" value="" placeholder="Сергей">
+                            </div>
+                            <div class="field checkout-field checkout-field-name">
+                                <p>Фамилия <span>*</span></p>
+                                <input class="input-checkout" type="text" name="name" value="" placeholder="Сергеев">
+                            </div>
+                        </div>
+
+                        <div class="flex-alignment">
+                            <div class="field checkout-field">
+                                <p>E-mail <span>*</span></p>
+                                <input class="input-checkout" type="email" name="email" value="">
+                            </div>
+                        </div>
+                        <div class="flex-alignment">
+                            <div class="field checkout-field">
+                                <div class="field-text-wrp">
+                                    <p>Телефон <span>*</span></p>
+                                    <p class="checkout-warning">Используйте только цифры, без пробелов</p>
+                                </div>
+                                <input class="input-checkout" type="tel" name="phone" value="">
+                            </div>
+                        </div>
+                        <p class="checkout-subtitle">Адрес доставки <span>*</span></p>
+                        <div class="flex-alignment">
+                            <div class="field checkout-field checkout-field-city">
+                                <input class="input-checkout" type="text" name="name" value="" placeholder="Область">
+                            </div>
+                            <div class="field checkout-field checkout-field-city">
+                                <input class="input-checkout" type="text" name="name" value="" placeholder="Город">
+                            </div>
+                        </div>
+                        <div class="flex-alignment">
+                            <div class="field checkout-field checkout-field-small">
+                                <input class="input-checkout" type="number" value="" placeholder="Индекс">
+                            </div>
+                            <div class="field checkout-field checkout-field-middle">
+                                <input class="input-checkout" type="text" value="" placeholder="Улица">
+                            </div>
+                            <div class="connect-wrp">
+                                <div class="field checkout-field checkout-field-small">
+                                    <input class="input-checkout" type="number"  value="" placeholder="Дом">
+                                </div>
+                                <div class="field checkout-field checkout-field-small">
+                                    <input class="input-checkout optional" type="number" value="" placeholder="Кв" >
+                                </div>
+                            </div>
+                        </div>
+                        <p class="checkout-subtitle">Примечание к заказу</p>
+                        <textarea class="textarea-checkout" name="name" rows="8" cols="80"></textarea>
+
+                </div>
+                <div class="checkout-block-order-pay-wrp">
+                    <div class="your-order-block">
+                        <p class="your-order-subtitle">Ваш заказ</p>
+                        <div class="order-items-wrp">
+                            <div class="order-item-block">
+                                <div class="order-img-wrp">
+                                    <img src="../../build/img/item1-big.jpg" alt="очки">
+                                </div>
+                                <p class="order-item-name">Очки для плавания Nimesis Crystal Large</p>
+                                <div class="wrapper">
+                                    <p class="order-item-count">2</p>
+                                    <p class="order-item-amount">1 400 <span>руб</span></p>
+                                </div>
+                            </div>
+                            <div class="order-item-block">
+                                <div class="order-img-wrp">
+                                    <img src="../../build/img/item1-big.jpg" alt="очки">
+                                </div>
+                                <p class="order-item-name">Очки для плавания Nimesis Crystal Large</p>
+                                <div class="wrapper">
+                                    <p class="order-item-count">2</p>
+                                    <p class="order-item-amount">1 400 <span>руб</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-alignment-order">
+                            <p class="flex-alignment-order-text">Всего:</p>
+                            <p class="order-item-total">4 200 <span>руб</span></p>
+                        </div>
+                        <div class="flex-alignment-order flex-alignment-order-last">
+                            <p class="flex-alignment-order-text">Стоимость доставки:</p>
+                            <p class="flex-alignment-order-text2">Уточняйте у продавца</p>
+                        </div>
+                    </div>
+                    <div class="check-pay-block">
+                        <label class="check-payment">
+                            <input name="radiobutton-checkout" type="radio" checked/>
+                            <div class="check-text-payment"><span>Оплата на сайте (Сбербанк)</span></div>
+                        </label>
+                        <label class="check-payment">
+                            <input name="radiobutton-checkout" type="radio" />
+                            <div class="check-text-payment"><span>Оплата при доставке</span></div>
+                        </label>
+                    </div>
+                    <button class="checkout-btn checkoutPage">Оформить заказ</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

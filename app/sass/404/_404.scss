@@ -1,0 +1,62 @@
+.page-404 {
+    background-color: #fff;
+    width: 100%;
+    min-height: calc(100vh - 500px);
+    display: flex;
+    align-items: center;
+    padding-top: 71px;
+    padding-bottom: 80px;
+}
+.content-404 {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    justify-content: space-between;
+}
+h4.title-404 {
+    line-height: 42px;
+    padding: 0;
+    text-align: left;
+    &::after {
+        display: none;
+    }
+}
+.text-404-wrp {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text-404 {
+    color: #70757b;
+    font-size: 16px;
+    font-family: 'proxima_regular';
+    line-height: 24px;
+}
+.back-to-main {
+    @extend %BTN;
+    margin: 0;
+}
+.number-404 {
+    line-height: 242px;
+    font-size: 320px;
+    font-family: 'proxima_novabold';
+    color: #FFFFFF;
+    text-shadow:
+        -0   -1px 0   #27458D,
+         0   -1px 0   #27458D,
+        -0    1px 0   #27458D,
+         0    1px 0   #27458D,
+        -1px -0   0   #27458D,
+         1px -0   0   #27458D,
+        -1px  0   0   #27458D,
+         1px  0   0   #27458D,
+        -1px -1px 0   #27458D,
+         1px -1px 0   #27458D,
+        -1px  1px 0   #27458D,
+         1px  1px 0   #27458D,
+        -1px -1px 0   #27458D,
+         1px -1px 0   #27458D,
+        -1px  1px 0   #27458D,
+         1px  1px 0   #27458D;
+}

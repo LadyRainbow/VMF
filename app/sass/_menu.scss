@@ -1,0 +1,174 @@
+.menu {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/bg-menu.png') center no-repeat;
+    background-size: cover;
+    .header-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% - 17px);
+        height: 131px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 56px;
+        font-family: 'sirius';
+        &::before, &::after {
+            top: 0;
+            content: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/brush.png');
+            position: absolute;
+        }
+        &::before {
+            left: 0;
+        }
+        &::after {
+            right: -25px;
+        }
+        .menu-close-wrp {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            height: 31px;
+            .menu-close {
+                height: 31px;
+                width: 24px;
+                background: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/close-menu.png') center no-repeat;
+                background-size: contain;
+                cursor: pointer;
+            }
+            p {
+                font-size: 30px;
+                margin-left: 45px;
+            }
+        }
+        .cart-wrp {
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 30px;
+            }
+            .phone {
+                margin-right: 97px;
+            }
+            .cart-btn {
+                position: absolute;
+                top: calc(50% - 11px);
+                right: 56px;
+                z-index: 2;
+                cursor: pointer;
+                letter-spacing: 0;
+                transition: all .3s;
+                &:hover {
+                    right: 48px;
+                    letter-spacing: 1.6px;
+                }
+            }
+        }
+    }
+    ul.menu-content {
+        text-align: center;
+        li {
+            font-family: 'sirius';
+            font-size: 80px;
+            color: #fff;
+            transition: all .3s;
+            &:hover {
+                color: #ca2b2b;
+            }
+        }
+    }
+    .footer-menu {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        padding: 0 56px;
+    }
+}
+.menu-mob {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/bg-menu-mob.png') center no-repeat;
+    background-size: cover;
+    .header-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        font-family: 'sirius';
+        .menu-close {
+            height: 25px;
+            width: 20px;
+            background: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/close-menu.png') center no-repeat;
+            background-size: contain;
+            cursor: pointer;
+        }
+        .cart-wrp {
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 30px;
+            }
+            a {
+                margin-right: 26px;
+            }
+            .cart-btn {
+                position: relative;
+                span {
+                    position: relative;
+                    z-index: 2;
+                }
+                &::after {
+                    top: -55px;
+                    left: -35px;
+                    content: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/brush.png');
+                    position: absolute;
+                }
+            }
+        }
+    }
+    ul.menu-content-mob {
+        text-align: center;
+        li {
+            font-size: 60px;
+            line-height: 80px;
+            font-family: 'sirius';
+        }
+    }
+    .footer-menu {
+        position: absolute;
+        left: 0;
+        bottom: 27px;
+        text-align: center;
+        font-size: 14px;
+        width: 100%;
+        a {
+            display: inline-block;
+            padding-bottom: 6px;
+            border-bottom: 1px solid rgba(255, 255, 255, .4);
+        }
+    }
+}

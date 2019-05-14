@@ -1,0 +1,73 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "custom";
+@import "header/header";
+@import "accordion/accordion";
+@import "footer/footer";
+@import "media/mediaContent";
+@import "form/form";
+@import "contacts/contacts";
+@import "menu";
+@import "main/main";
+@import "sections-page/sections-page";
+@import "policy/policy";
+@import "popUp/popUp";
+@import "campTemplate/campTemplate";
+@import "sectionTemplate/sectionTemplate";
+@import "trainers/trainers";
+@import "news/news";
+@import "documents/documents";
+@import "cardProduct/cardProduct";
+@import "cart/cart";
+@import "catalog/catalog";
+@import "checkout/checkout";
+@import "popUp/popUpTable";
+@import "404/404";
+@import "mCustomScrollBox";
+
+
+body {
+    position: relative;
+    font-family: 'proxima_novasemibold';
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    color: #4e5155;
+    background-color: #ffffff;
+    &.compensate-for-scrollbar {
+        padding-right: 17px;
+        overflow: hidden;
+    }
+    &.overflow-hidden {
+        overflow: hidden;
+    }
+}
+
+.app {
+    position: relative;
+    width: 100%;
+    padding-bottom: 327px;
+    min-height: 100vh;
+    .pages-wrapper, .header-wrapper, .footer-wrapper, .menu-wrapper {
+        position: relative;
+        width: 100%;
+    }
+    .footer-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .header-wrapper {
+        z-index: 3;
+    }
+    .pages-wrapper {
+        z-index: 2;
+    }
+}
+.content {
+    position: relative;
+    width: 1180px;
+    margin: 0 auto;
+}
+@import "media/media";

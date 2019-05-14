@@ -1,0 +1,181 @@
+.pop-up-overlay-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    // overflow-y: auto;
+    z-index: 10;
+    .overlay-pop-up {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: $overlay;
+        opacity: 0.702;
+        z-index: 5;
+    }
+}
+.pop-up-add-call, .pop-up-submit-app {
+    display: none;
+    position: absolute;
+    top:  calc(50% - 260px);
+    left: calc(50% - 190px);
+    width: 380px;
+    height: 535px;
+    z-index: 6;
+    background-color: #fff;
+    padding: 60px 45px;
+    border-radius: 6px;
+}
+input.input-sections.input-pop-up-add-call {
+    width: 100%;
+}
+input.button.input-sections.input-pop-up-add-call {
+    color: white;
+    background-color: $blue;
+    margin-top: 35px;
+}
+h4.pop-up-title, h4.pop-up-title-thnx {
+    padding-top: 0;
+    padding-bottom: 34px;
+    &::after {
+        display: none;
+    }
+}
+.field.field-pop-up-add-call {
+    margin-bottom: 25px;
+}
+.pop-up-thnx {
+    display: none;
+    position: absolute;
+    z-index: 6;
+    top: calc(50% - 115px);
+    left: calc(50% - 190px);
+    border-radius: 6px;
+    width: 380px;
+    height: 230px;
+    background-color: #fff;
+    &-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    p {
+        color: $dove;
+        text-align: center;
+        line-height: 20px;
+    }
+}
+.pop-up-thnx-order {
+    display: none;
+    position: absolute;
+    z-index: 6;
+    top: calc(50% - 140px);
+    left: calc(50% - 190px);
+    border-radius: 6px;
+    width: 380px;
+    height: 280px;
+    background-color: #fff;
+    &-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    p {
+        color: $dove;
+        text-align: center;
+        line-height: 20px;
+    }
+}
+.pop-up-title-thnx-order {
+    line-height: 1;
+}
+.pop-up-thnx-order-btn {
+    @extend %btnLoadMore;
+    margin: 0 auto;
+    color: white;
+    background-color: $blue;
+    &:hover {
+        background-color: #1b3061;
+    }
+    & + .pop-up-thnx-order-btn  {
+        margin-top: 10px;
+    }
+}
+.pop-up-phones {
+    display: none;
+    width: 336px;
+    height: 236px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: calc(50% - 118px);
+    left: calc(50% - 168px);
+    z-index: 6;
+    .pop-up-phones-block {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &.pop-up-phones-block1 {
+            border-bottom: 1px solid #dee1e6;
+        }
+    }
+    a {
+        color: $blue;
+        font-family: 'proxima_novabold';
+        font-size: 20px;
+        line-height: 22px;
+        &.WhatsApp-text {
+            font-size: 15px;
+            color: $dove;
+            font-family: 'proxima_novasemibold';
+            line-height: 26px;
+        }
+    }
+}
+
+.pop-up-add-call-close-btn, .pop-up-thnx-close-btn, .pop-up-phones-close-btn, .pop-up-submit-app-close-btn, .pop-up-thnx-order-close-btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -24px;
+    right: -24px;
+    cursor: pointer;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: -3px;
+        width: 26px;
+        height: 4px;
+        background-color: #fff;
+        transform: rotate(-45deg);
+        border-radius: 2px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: -3px;
+        width: 26px;
+        height: 4px;
+        background-color: #fff;
+        transform: rotate(45deg);
+        border-radius: 2px;
+    }
+}
+.pop-up-phones-close-btn {
+    right: 0;
+}

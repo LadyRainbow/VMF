@@ -1,0 +1,133 @@
+.decor-top-img {
+    width: 100%;
+    position: relative;
+    height: 279px;
+    background: url('../img/trainers.jpg') center no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3, h6 {
+        line-height: 1;
+    }
+    h3 {
+        margin-bottom: 15px;
+    }
+}
+.trainer-buttons-wrp {
+    padding-top: 48px;
+    font-size: 0;
+}
+.trainer-button {
+    width: 33.33%;
+    height: 66px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(147, 162, 198);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: none;
+    margin-top: 12px;
+    p {
+        &:first-child {
+            font-size: 18px;
+            font-family: 'proxima_novabold';
+            color: $blue;
+        }
+    }
+    &.active {
+        background-color: $blue;
+        border-color: $blue;
+        p {
+            color: white;
+        }
+    }
+    & + .trainer-button {
+        border-left: 1px solid rgb(147, 162, 198);
+    }
+    &:nth-child(3n), &:last-child {
+        border-right: 1px solid rgb(147, 162, 198);
+    }
+}
+// Trainers
+.trainers-blocks-wrp {
+    padding: 60px 0;
+    font-size: 0;
+}
+.trainer-block {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 580px;
+    height: 280px;
+    border-radius: 6px;
+    border: 1px solid #dee1e6;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: $dove !important;
+    img {
+        height: 100%;
+        width: 280px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .trainer-block-text-wrp {
+        width: 280px;
+        height: 100%;
+        padding-top: 30px;
+        padding-right: 10px;
+    }
+    .trainer-block-text {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        .trainer-name {
+            font-family: 'proxima_novabold';
+            font-size: 18px;
+            line-height: 24px;
+            position: relative;
+            color: $blue;
+            padding-bottom: 15px;
+            margin-bottom: 16px;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 40px;
+                height: 3px;
+                background-color: #e41e25;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        .trainer-list {
+            font-size: 14px;
+            line-height: 21px;
+            color: $dove;
+            li {
+                position: relative;
+                padding-left: 10px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 8px;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background-color: #27458d;
+                }
+            }
+        }
+    }
+    &:nth-child(even) {
+        margin-right: 0;
+    }
+}
+.show-all-trainers {
+    @extend %btnLoadMore;
+    font-size: 15px;
+    margin-top: 30px;
+}
